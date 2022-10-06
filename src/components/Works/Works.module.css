@@ -1,0 +1,25 @@
+.works_block{
+    min-height: 100vh;
+    background-color: darkseagreen;
+}
+
+.works_container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.title {
+    align-items: center;
+}
+
+.works{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

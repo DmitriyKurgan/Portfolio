@@ -1,0 +1,22 @@
+.contacts_block {
+    min-height:100vh;
+    background: darkslateblue;
+}
+
+.contacts_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+
+.title {
+    align-items: center;
+}
+
+.submit_button{
+    width: max-content;
+}

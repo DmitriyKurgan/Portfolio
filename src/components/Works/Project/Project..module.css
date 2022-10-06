@@ -1,0 +1,35 @@
+.project_block{
+    background: thistle;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.project_image_block{
+    background-image: url("./../../../common/Assets/initialPrtoject.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:250px;
+    width: 100%;
+}
+
+.project_image_block a {
+    line-height: 2em;
+    font-size: 1.2em;
+    background: #61dafb;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.project_image_block a:hover {
+    background: #2EE59D;
+}
+

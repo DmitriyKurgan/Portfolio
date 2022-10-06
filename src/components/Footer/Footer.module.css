@@ -1,0 +1,32 @@
+.footer_block {
+    background: #2EE59D;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+.footer_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 280px;
+    flex-wrap: wrap;
+}
+
+.footer_menu_item{
+    background: cadetblue;
+    height: 150px;
+    width: 70px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.footer_container p{
+    font-size: 1.2em;
+}
