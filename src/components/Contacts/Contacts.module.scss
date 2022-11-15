@@ -1,22 +1,22 @@
+@import "../../common/styles/sass/variables";
+
 .contacts_block {
     min-height:100vh;
-    background: darkslateblue;
 }
 
 .contacts_container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
     flex-wrap: wrap;
 }
-
 
 .title {
     align-items: center;
 }
 
 .submit_button{
-    width: max-content;
+    margin-top: 20px;
+   min-width: max-content;
 }

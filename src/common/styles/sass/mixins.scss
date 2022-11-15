@@ -1,0 +1,29 @@
+@import "variables";
+
+@mixin text ($fontFamily, $fontSize, $lineHeight, $fontWeight){
+  font-size: $fontSize;
+  font-family:$fontFamily;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin volumeBlockHover ($-webkit-transform, $-ms-transform, $transform, $-moz-transition,$-o-transition,$-webkit-transition, $cursor){
+  -webkit-transform:$-webkit-transform;
+  -ms-transform:$-ms-transform;
+  transform:$transform;
+  -moz-transition:$-moz-transition;
+  -o-transition:$-o-transition;
+  -webkit-transition:$-webkit-transition;
+  cursor:$cursor;
+}
+
+@mixin volumeBlock ($-moz-border-radius, $-webkit-border-radius, $-moz-box-shadow, $-webkit-box-shadow){
+  -moz-border-radius:$-moz-border-radius;
+  -webkit-border-radius:$-webkit-border-radius;
+  -moz-box-shadow:$-moz-box-shadow;
+  -webkit-box-shadow:$-webkit-box-shadow;
+}
+
+
+
+
