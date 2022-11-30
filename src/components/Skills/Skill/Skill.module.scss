@@ -17,20 +17,18 @@
   position: relative;
   z-index: 90;
   max-height: max-content;
+  &:hover {
+    @include volumeBlockHover (scale(1.15)-transform, scale(1.15), scale(1.15),
+            all 0.3s ease-out, all 0.3s ease-out, all 0.3s ease-out, pointer);
+  }
+  .project_image_block{
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+
+  }
 }
 
-
-.skill:hover {
-  @include volumeBlockHover (scale(1.15)-transform, scale(1.15), scale(1.15),
-  all 0.3s ease-out, all 0.3s ease-out, all 0.3s ease-out, pointer);
-}
-
-
-.icon {
-  width: 60px;
-  height: 60px;
-  background: #87cefa;
-}
 
 .text {
   @include text($fontFamily, 14px, 1, 500);

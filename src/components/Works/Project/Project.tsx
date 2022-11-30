@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './Project.module.scss';
-import {SocialType} from '../Projects';
+import {StyleType} from '../Projects';
+import styles from './Project.module.scss'
 
 
 type ProjectPropsType = {
     title: string
     description: string
-    style: SocialType
+    style: StyleType
 }
 
 export const Project: React.FC<ProjectPropsType> = ({title, description, style}) => {
