@@ -11,17 +11,18 @@
   padding: 20px;
   clear: both;
   margin: 20px;
-  @include volumeBlock
-  (10px, 10px, 0px 0px 8px rgba(0, 0, 0, 0.5),
+  @include volumeBlock(10px, 10px, 0px 0px 8px rgba(0, 0, 0, 0.5),
           0px 0px 8px rgba(0, 0, 0, 0.5));
   position: relative;
   z-index: 90;
   max-height: max-content;
+
   &:hover {
-    @include volumeBlockHover (scale(1.15)-transform, scale(1.15), scale(1.15),
+    @include volumeBlockHover(scale(1.15) -transform, scale(1.15), scale(1.15),
             all 0.3s ease-out, all 0.3s ease-out, all 0.3s ease-out, pointer);
   }
-  .project_image_block{
+
+  .project_image_block {
     width: 60px;
     height: 60px;
     background-size: cover;
