@@ -1,12 +1,13 @@
 @import "../../common/styles/sass/variables.scss";
 
-.nav{
-    border:1px solid #ffffff;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    a{
-        color: $textColor;
-        text-decoration: none;
-    }
+.nav {
+  border: 1px solid #ffffff;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: $textColor;
+    text-decoration: none;
+  }
 }

@@ -1,8 +1,10 @@
 
 h1,h2{
-  /*background: greenyellow;*/
+
 }
 
-/*.App{*/
-/*  background-color:#7000ff !important;*/
-/*}*/
+
+
+.App{
+    scroll-behavior: smooth
+}

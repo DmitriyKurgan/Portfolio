@@ -1,0 +1,52 @@
+@import "../../common/styles/sass/mixins";
+
+.footer_block {
+    border-top: 0.5px solid #ffffff;
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footer_container p{
+            font-size: 1.2em;
+        }
+
+        .footer_menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 280px;
+            flex-wrap: wrap;
+
+            .footer_menu_item img{
+                padding-top: 35px;
+                width: 100%;
+            }
+
+            .footer_menu_item{
+                height: 150px;
+                width: 70px;
+                box-sizing: border-box;
+
+
+                &:hover {
+                    @include volumeBlockHover(scale(1.25) -transform, scale(1.25), scale(1.25),
+                            all 0.3s ease-out, all 0.3s ease-out, all 0.3s ease-out, pointer);
+                }
+        }
+    }
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+

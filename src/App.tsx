@@ -12,27 +12,29 @@ import todolist1Image from './common/Assets/todolist1.png';
 import todolist2Image from './common/Assets/todolist2.jpg';
 import counterImage from './common/Assets/counter.png';
 import jsTrainingImage from './common/Assets/JS.png';
+import JS from './common/Assets/JS.png';
 import reactCabzda from './common/Assets/reactCab.jpeg';
-
 import HTML5 from './common/Assets/html-svgrepo-com.svg';
 import CSS3 from './common/Assets/css-svgrepo-com.svg';
+import GRID from './common/Assets/css-svgrepo-com.svg';
 import Module from './common/Assets/css-programming-svgrepo-com.svg';
 import FLEX from './common/Assets/module-svgrepo-com.svg';
 import SCSS from './common/Assets/css-svgrepo-com (1).svg';
-import GRID from './common/Assets/css-svgrepo-com.svg';
-import JS from './common/Assets/JS.png';
 import TS from './common/Assets/typescript-svgrepo-com.svg';
 import ScSS from './common/Assets/SCSS.png';
 import reactImg from './common/Assets/react-svgrepo-com.svg';
 import ReduX from './common/Assets/redux-svgrepo-com.svg';
 import Thunk from './common/Assets/RDX_THNK.png';
 import Axios from './common/Assets/pull-requests-svgrepo-com.svg';
-import REST_API from './common/Assets/icon.png';
-import Formik from './common/Assets/formik.png';
 import Selectors from './common/Assets/pull-requests-svgrepo-com.svg';
+import REST_API from './common/Assets/icon.png';
+import Hooks from './common/Assets/icon.png';
+import Formik from './common/Assets/formik.png';
 import FLUX from './common/Assets/fluX.png';
 import GIT from './common/Assets/git-svgrepo-com.svg';
-import Hooks from './common/Assets/icon.png';
+import {BrowserRouter} from 'react-router-dom';
+import {particlesInit, particlesOptions} from './common/Particles/Particles';
+import Particles from 'react-tsparticles';
 
 
 let skills = [
@@ -144,7 +146,6 @@ let skills = [
         style: {backgroundImage: `url(${Hooks})`}
     },
 ];
-
 let projects = [
     {
         id: 1,
@@ -184,19 +185,22 @@ let projects = [
     }
 ]
 
-
 function App() {
     return (
-        <div className="App">
-            <Header/>
-            <Main/>
-            <Skills skills={skills}/>
-            <Projects projects={projects}/>
-            <RemoteWork/>
-            <Contacts/>
-            <Footer/>
-        </div>
-
+        <BrowserRouter>
+            <div className="App">
+                <Particles
+                    init={particlesInit}
+                    options={particlesOptions}/>
+                <Header/>
+                <Main/>
+                <Skills skills={skills}/>
+                <Projects projects={projects}/>
+                <RemoteWork/>
+                <Contacts/>
+                <Footer/>
+            </div>
+        </BrowserRouter>
     );
 }
 

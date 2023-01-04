@@ -4,6 +4,7 @@ import stylesContainer from './../../common/styles/Container.module.css';
 import {Skill} from './Skill/Skill';
 import {Title} from '../../common/Title/Title';
 import {StyleType} from '../Works/Projects';
+import Fade from 'react-awesome-reveal';
 
 export type SkillType = {
     id: number
@@ -12,21 +13,22 @@ export type SkillType = {
     style: StyleType
 }
 
-
-
 type SkillsPropsType = {
     skills: SkillType[]
 }
 
 export const Skills: React.FC<SkillsPropsType> = ({skills}) => {
     return (
-        <section className={styles.skills_block}>
-            <div className={`${stylesContainer.container} ${styles.skillsContainer}`}>
-                <Title title={'Skills'}/>
-                <div className={styles.skills}>
-                    {skills.map(s => <Skill key={s.id} title={s.title} description={s.description} style={s.style}/>)}
+        <Fade cascade duration={1400}>
+            <section className={styles.skills_block} id="skills">
+                <div className={`${stylesContainer.container} ${styles.skillsContainer}`}>
+                    <Title title={'Skills'}/>
+                    <div className={styles.skills}>
+                        {skills.map(s => <Skill key={s.id} title={s.title} description={s.description}
+                                                style={s.style}/>)}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </Fade>
     );
 };
