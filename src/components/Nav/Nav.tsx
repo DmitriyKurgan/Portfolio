@@ -4,10 +4,9 @@ import styles from './Nav.module.scss';
 export const Nav = () => {
     return (
         <div className={styles.nav}>
-            <a href="#">Main</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts-block">Contacts</a>
+            <a href="#skills">My skills</a>
+            <a href="#projects">My projects</a>
+            <a href="#contacts-block">Contact me</a>
         </div>
     );
 };

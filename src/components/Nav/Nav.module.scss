@@ -1,13 +1,22 @@
 @import "../../common/styles/sass/variables.scss";
 
 .nav {
-  border: 1px solid #ffffff;
-  width: 300px;
+  width: 340px;
   display: flex;
   justify-content: space-between;
+  padding-right: 40px;
+  font-size: 18px;
+  max-height: 80px;
 
   a {
     color: $textColor;
     text-decoration: none;
+    line-height: 80px;
+
+    &:hover{
+      background: #5e179e;
+      border: 1px solid #fff;
+      box-sizing: border-box;
+    }
   }
 }

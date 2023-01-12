@@ -33,8 +33,6 @@ import Formik from './common/Assets/formik.png';
 import FLUX from './common/Assets/fluX.png';
 import GIT from './common/Assets/git-svgrepo-com.svg';
 import {BrowserRouter} from 'react-router-dom';
-import {particlesInit, particlesOptions} from './common/Particles/Particles';
-import Particles from 'react-tsparticles';
 
 
 let skills = [
@@ -151,35 +149,41 @@ let projects = [
         id: 1,
         title: 'Social Network on TS',
         description: 'I present you my second fully completed social network, which is written in React + Redux + TS. ',
+        link: 'https://dmitriykurgan.github.io/TSX_SOCIAL_NETWORK_Dmitriy',
         style: {backgroundImage: `url(${socialNetworkImage})`}
     },
     {
         id: 2,
-        title: 'First Todo list',
+        title: 'Todo list',
         description: 'Introducing my basic Todo list, written using React + Redux + TS+ Axios + Hooks, etc. Here I honed all my skills in practice as I studied in IT-INCUBATOR.',
+        link: 'https://dmitriykurgan.github.io/toDoList_DmitriyKurgan',
         style: {backgroundImage: `url(${todolist1Image})`}
     },
     {
         id: 3,
-        title: 'Second Training Todo list',
-        description: 'I present you my second training Todo list, written using React + Redux + TS + Axios + Hooks, etc. Here I consolidated all my skills in practice as I studied in IT-INCUBATOR.',
+        title: 'Cards project',
+        description: 'I present you my cards project, written using React + Redux Toolkit + RTK Query + TS + Axios + Hooks, etc. Here I consolidated all my skills in practice as I studied in IT-INCUBATOR.',
+        link: 'https://cards-friday-project.vercel.app/',
         style: {backgroundImage: `url(${todolist2Image})`}
     },
     {
         id: 4,
         title: 'React + Redux counter with settings',
         description: 'I present you my modified setup counter, which was my IT-INCUBATOR exam and was refined as I learned, according to the ToR. Here I used the classic combination of React + Redux technologies with the addition of Local Storage + store.subscribe.',
+        link: '#',
         style: {backgroundImage: `url(${counterImage})`}
     },
     {
         id: 5,
         title: 'JS training',
+        link: '#',
         description: 'I\'m also attaching some of my files in which I wrote practice code, solidifying my knowledge of native JS, delving into the technologies needed to better understand the architecture of web applications.',
         style: {backgroundImage: `url(${jsTrainingImage})`}
     },
     {
         id: 6,
         title: 'React training',
+        link: '#',
         description: 'I\'m also attaching this repository for a local exploration of React and StoryBook features. ',
         style: {backgroundImage: `url(${reactCabzda})`}
     }
@@ -189,9 +193,6 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Particles
-                    init={particlesInit}
-                    options={particlesOptions}/>
                 <Header/>
                 <Main/>
                 <Skills skills={skills}/>

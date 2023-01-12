@@ -1,10 +1,17 @@
 
-h1,h2{
+h1, h2 {
 
 }
 
 
+.App {
+     animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-name: slidegdz;
+    animation-fill-mode: forwards;
+}
 
-.App{
-    scroll-behavior: smooth
+@keyframes slidegdz {
+    0% { width: 10%; }
+    100% { width: 100%; }
 }
