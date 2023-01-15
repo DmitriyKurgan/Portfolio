@@ -1,22 +1,54 @@
 @import "../../common/styles/sass/variables.scss";
 
 .nav {
-  width: 340px;
+  width: 350px;
   display: flex;
   justify-content: space-between;
   padding-right: 40px;
   font-size: 18px;
   max-height: 80px;
 
+
   a {
     color: $textColor;
     text-decoration: none;
     line-height: 80px;
 
-    &:hover{
+    & img {
+      width: 20px;
+    }
+
+    &:hover {
       background: #5e179e;
       border: 1px solid #fff;
       box-sizing: border-box;
     }
   }
+
+}
+
+.initializeBlock:hover{
+  background:#5e179e ;
+  text-align: center;
+}
+
+.dropdownWrapper{
+  width: 30px;
+  height: 40px;
+  background: #5e179e;
+}
+
+.dropdownMenu {
+  padding: 0;
+  top:60px;
+  position: absolute;
+  list-style-type: none;
+
+  }
+
+.dropdownItem a{
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 30px;
 }

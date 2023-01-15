@@ -5,12 +5,13 @@ import {Title} from '../../common/Title/Title';
 import gh from './../../common/Assets/gh.png';
 import link from './../../common/Assets/linked.png';
 import tg from './../../common/Assets/telegram.png';
+import {strings} from "../../common/Utills/initialization.ts";
 
 export const Footer = () => {
     return (
         <footer className={styles.footer_block}>
             <div className={`${stylesContainer.container} ${styles.footer_container}`}>
-                <Title title={'Dmitriy Kurgan'}/>
+                <Title title={strings.footerBlock.title}/>
                 <div className={styles.footer_menu}>
                     <div className={styles.footer_menu_item}><a href="https://github.com/DmitriyKurgan"><img
                         src={gh}/></a></div>
@@ -19,7 +20,7 @@ export const Footer = () => {
                     <div className={styles.footer_menu_item}><a href="https://t.me/Engineer_dima"><img
                         src={tg}/></a></div>
                 </div>
-                <p>@2022 All rights reserved</p>
+                <p>{strings.footerBlock.coopyright}</p>
             </div>
         </footer>
     )

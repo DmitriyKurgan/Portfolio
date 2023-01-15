@@ -5,6 +5,7 @@ import {useDispatch} from 'react-redux';
 import {contactMe} from '../../../bll/auth-reducer';
 import {createField} from '../../../common/Utills/form-helpers';
 import {Button} from '../../../common/Button/Button';
+import {strings} from "../../../common/Utills/initialization.ts";
 
 
 export const Form = () => {
@@ -42,7 +43,7 @@ export const Form = () => {
             {formik.touched.email && formik.errors.email && <div>{formik.errors.email}</div>}
             {createField('message', 'textarea', formik)}
             {formik.touched.email && formik.errors.email && <div>{formik.errors.email}</div>}
-            <Button title={'Submit'} className={styles.submit_button} callback={() => {
+            <Button title={strings.contactsBlock.submit} className={styles.submit_button} callback={() => {
             }}/>
         </form>
     );

@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {FC} from 'react';
 import styles from './Header.module.scss';
 import {Nav} from '../Nav/Nav';
 
-export const Header = () => {
+type HeaderType = {
+    initializeAppLanguage: (initialize: string) => void
+}
+
+export const Header: FC<HeaderType> = ({initializeAppLanguage}) => {
     return (
         <header className={styles.header}>
-            <Nav/>
+            <Nav initializeAppLanguage={initializeAppLanguage}/>
         </header>
     );
 };

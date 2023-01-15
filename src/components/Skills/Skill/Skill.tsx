@@ -6,7 +6,7 @@ export type SkillPropsType = {
     title: string
     description: string
     style: StyleType
-}
+    }
 
 export const Skill: React.FC<SkillPropsType> = memo(({title, description, style}) => {
     return (

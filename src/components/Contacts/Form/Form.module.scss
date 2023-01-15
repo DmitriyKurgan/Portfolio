@@ -45,8 +45,9 @@
   }
 
   & button{
-    width: 120px;
-    margin-left: 80px ;
+    min-width: 120px;
+    max-width: 150px;
+    margin-left: 75px ;
   }
 
 }
@@ -55,7 +56,7 @@
   .form_block {
     width: 550px;
     & button{
-      margin-left: 215px;
+      margin-left: 205px;
     }
   }
 
