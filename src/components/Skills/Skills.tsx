@@ -15,10 +15,10 @@ export type SkillType = {
 
 type SkillsPropsType = {
     skills: SkillType[],
-    initialize: string
+    internationalization: string
 }
 
-export const Skills: React.FC<SkillsPropsType> = memo(({skills, initialize}) => {
+export const Skills: React.FC<SkillsPropsType> = memo(({skills, internationalization}) => {
     const skillsDescriptions = strings.skillsBlock.allSkills;
     return (
         <section className={styles.skills_block} id="skills">

@@ -19,11 +19,11 @@ export type StyleType = {
 
 type ProjectPropsType = {
     projects: ProjectType[],
-    initialize: string
+    internationalization: string
 }
 
 
-export const Projects: React.FC<ProjectPropsType> = memo(({projects, initialize}) => {
+export const Projects: React.FC<ProjectPropsType> = memo(({projects, internationalization}) => {
     const projectsDescriptions = strings.projectsBlock.allProjects;
     return (
         <section className={styles.projects_block} id="projects">
