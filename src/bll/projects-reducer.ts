@@ -38,20 +38,6 @@ let initialState: ProjectsStateType = [
         link: '#',
         style: {backgroundImage: `url(${counterImage})`}
     },
-    {
-        id: 4,
-        title: 'JS training',
-        link: '#',
-        description: 'I\'m also attaching some of my files in which I wrote practice code, solidifying my knowledge of native JS, delving into the technologies needed to better understand the architecture of web applications.',
-        style: {backgroundImage: `url(${jsTrainingImage})`}
-    },
-    {
-        id: 5,
-        title: 'React training',
-        link: '#',
-        description: 'I\'m also attaching this repository for a local exploration of React and StoryBook features. ',
-        style: {backgroundImage: `url(${reactCabzda})`}
-    }
 ];
 
 export const projectsReducer = (state: ProjectsStateType = initialState, action: SkillsActionTypes) => {

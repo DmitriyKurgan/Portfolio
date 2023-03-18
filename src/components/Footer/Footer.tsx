@@ -13,7 +13,7 @@ export const Footer = () => {
             <div className={`${stylesContainer.container} ${styles.footer_container}`}>
                 <Title title={strings.footerBlock.title}/>
                 <div className={styles.footer_menu}>
-                    <div className={styles.footer_menu_item}><a href="https://github.com/DmitriyKurgan"><img
+                    <div className={styles.footer_menu_item}><a href="#"><img
                         src={gh}/></a></div>
                     <div className={styles.footer_menu_item}><a href="https://www.linkedin.com/feed/"><img
                         src={link}/></a></div>
@@ -25,3 +25,4 @@ export const Footer = () => {
         </footer>
     )
 };
+// <a href="https://github.com/DmitriyKurgan">
