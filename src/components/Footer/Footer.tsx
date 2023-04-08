@@ -25,4 +25,3 @@ export const Footer = () => {
         </footer>
     )
 };
-// <a href="https://github.com/DmitriyKurgan">

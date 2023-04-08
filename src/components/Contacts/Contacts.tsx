@@ -5,6 +5,8 @@ import {Form} from './Form/Form';
 import {Title} from '../../common/Title/Title';
 import {strings} from "../../common/Utills/initialization.ts";
 
+
+
 export const Contacts = () => {
     return (
         <section className={styles.contacts_block} id="contacts-block">
