@@ -15,7 +15,6 @@ import {strings} from "./common/Utills/initialization.ts";
 import {SkillsStateType} from "./bll/skills-reducer";
 import {ProjectsStateType} from "./bll/projects-reducer";
 
-
 function App() {
     const internationalization = useSelector<RootStateType, string>(state => state.app.internationalization);
     const skills = useSelector<RootStateType, SkillsStateType>(state => state.skills)
