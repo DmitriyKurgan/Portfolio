@@ -2,8 +2,10 @@ import React from 'react';
 import styles from './Main.module.scss';
 import stylesContainer from './../../common/styles/Container.module.css';
 import avatar from '../../common/Assets/goodPic.jpg';
-import ReactTypingEffect from 'react-typing-effect';
 import {strings} from "../../common/Utills/initialization.ts";
+import ReactTypingEffect from 'react-typing-effect';
+
+const TypingEffect: any = ReactTypingEffect
 
 const style = {backgroundImage: `url(${avatar})`}
 

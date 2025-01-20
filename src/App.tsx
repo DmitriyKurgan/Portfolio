@@ -30,7 +30,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Header initializeAppLanguage={initializeAppLanguage}/>
-                <Main/>
+                {/*<Main/>*/}
                 <Skills skills={skills} internationalization={internationalization}/>
                 <RemoteWork/>
                 <Contacts/>
