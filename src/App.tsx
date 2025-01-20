@@ -32,7 +32,6 @@ function App() {
                 <Header initializeAppLanguage={initializeAppLanguage}/>
                 <Main/>
                 <Skills skills={skills} internationalization={internationalization}/>
-                <Projects projects={projects} internationalization={internationalization}/>
                 <RemoteWork/>
                 <Contacts/>
                 <Footer/>

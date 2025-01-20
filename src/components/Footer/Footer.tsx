@@ -15,8 +15,6 @@ export const Footer = () => {
                 <div className={styles.footer_menu}>
                     <div className={styles.footer_menu_item}><a href="#"><img
                         src={gh}/></a></div>
-                    <div className={styles.footer_menu_item}><a href="https://www.linkedin.com/feed/"><img
-                        src={link}/></a></div>
                     <div className={styles.footer_menu_item}><a href="https://t.me/Engineer_dima"><img
                         src={tg}/></a></div>
                 </div>
